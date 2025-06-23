@@ -2397,6 +2397,7 @@
 	)
 	(label "STAT1"
 		(at 109.22 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2404,6 +2405,17 @@
 			(justify left bottom)
 		)
 		(uuid "f57e7339-4da6-4909-9a7a-a6b133a6b956")
+		(property "Netclass" "digital_lp"
+			(at 109.22 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
@@ -3752,16 +3764,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 204.47 88.9 0)
+		(at 204.47 91.44 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "943c05ac-bb8b-4c98-8772-dde415cda1b6")
 		(property "Reference" "J2"
-			(at 207.01 88.8999 0)
+			(at 207.01 91.4401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3770,7 +3782,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 207.01 91.4399 0)
+			(at 207.01 88.9001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3779,7 +3791,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_SPOX_5268-02A_1x02_P2.50mm_Horizontal"
-			(at 204.47 88.9 0)
+			(at 204.47 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,7 +3800,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 88.9 0)
+			(at 204.47 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3797,7 +3809,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 204.47 88.9 0)
+			(at 204.47 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)

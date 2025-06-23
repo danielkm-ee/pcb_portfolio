@@ -123,8 +123,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -136,9 +136,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.25,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -190,7 +190,8 @@
         0.0,
         0.225,
         0.5,
-        0.75
+        0.75,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -488,14 +489,47 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "digital_lp",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "sw_pwr",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "/STAT1": [
+        "digital_lp"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "digital_lp",
+        "pattern": "/STAT*"
+      },
+      {
+        "netclass": "digital_lp",
+        "pattern": "/~PG"
+      },
+      {
+        "netclass": "sw_pwr",
+        "pattern": "/VBUS"
+      },
+      {
+        "netclass": "sw_pwr",
+        "pattern": "/VBAT"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
