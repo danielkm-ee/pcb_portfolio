@@ -1729,6 +1729,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Shrinking layout footprint, add labels to status indicator lights"
+		(exclude_from_sim no)
+		(at 105.918 178.054 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "021ffe30-672c-4d98-9ac7-dce89cc65c1a")
+	)
+	(text "Revision Notes"
+		(exclude_from_sim no)
+		(at 110.236 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "09467504-e268-4085-8108-978d5f07002a")
+	)
 	(text "Thermal Modeling w/ NTC Resistors:\n24k = RTS + [RTP*RCOLD/(RTP+RCOLD)]\n5k  = RTS + [RTP*RHOT/(RTP+RHOT)]"
 		(exclude_from_sim no)
 		(at 193.04 104.14 0)
@@ -1763,7 +1784,7 @@
 	)
 	(text "Added 5.1k Pulldown at USC-C terminal, sets to 5v 3A limit"
 		(exclude_from_sim no)
-		(at 111.506 176.53 0)
+		(at 105.918 173.482 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2004,6 +2025,16 @@
 		)
 		(uuid "65c3aa20-845d-4e67-9568-6560ba0999a9")
 	)
+	(polyline
+		(pts
+			(xy 101.854 166.116) (xy 101.854 197.612)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6730aec0-44f7-4317-b491-f65862e1d393")
+	)
 	(wire
 		(pts
 			(xy 170.18 80.01) (xy 170.18 81.28)
@@ -2193,6 +2224,16 @@
 			(type default)
 		)
 		(uuid "d75b14a6-75ba-40d2-bbc2-4c3e27aeaac6")
+	)
+	(polyline
+		(pts
+			(xy 177.292 166.116) (xy 101.854 166.116)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7cc07a7-fc86-48b4-8cfb-3607d988a895")
 	)
 	(wire
 		(pts
