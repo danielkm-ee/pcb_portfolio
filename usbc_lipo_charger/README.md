@@ -12,7 +12,7 @@ port.
 - Small profile
 - Minimal design
 
-[](./usbc_lipo_charger.pcb)
+![image of pcb](./usbc_lipo_charger.pcb)
 
 ## Schematic
 <object data="usbc_lipo_charger_schematic.pdf" type="application/pdf" width="600" height="800">
