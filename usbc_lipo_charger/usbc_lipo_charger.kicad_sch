@@ -2355,16 +2355,6 @@
 		)
 		(uuid "7ca4cb1c-16a5-46d4-8725-fb7ee4cf17c8")
 	)
-	(label "VBUS"
-		(at 133.35 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a84a9e77-a652-4628-9b2c-727a12582040")
-	)
 	(label "VBAT"
 		(at 187.96 88.9 0)
 		(effects
